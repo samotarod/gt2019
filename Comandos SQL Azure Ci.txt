@@ -1,0 +1,7 @@
+az group create --name myResourceGroup --location centralus
+
+az appservice plan create  --resource-group MyResourceGroup --name MyPlan --sku S1
+
+az webapp create --resource-group MyResourceGroup --plan MyPlan --name bancadata20erp
+
+az sql server create -l centralus -g MyResourcegroup -n srvdata20sql -u adminsa -p Pa$$w0rd2019
